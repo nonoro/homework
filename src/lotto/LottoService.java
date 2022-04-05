@@ -39,7 +39,7 @@ public class LottoService {
                 num = Integer.parseInt(input);
 
                 if (num < BUY_LOTTO_INPUT_MIN || num > BUY_LOTTO_INPUT_MAX) {
-                    System.out.print(WRONG_NUMBER);
+                    System.out.println(WRONG_NUMBER);
                     continue;
                 }
                 break;
