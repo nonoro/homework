@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42d3b9ff-c8ad-49d7-bc10-9766bbdcc9e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/homework/exercise/JavaExcercise01.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/homework/exercise/JavaExcercise02.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/homework/exercise/JavaExcercise03.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/homework/exercise/JavaExcercise04.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/homework/exercise/JavaExcercise05.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/homework/exercise/JavaExcercise06.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/homework/exercise/JavaExcercise07.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/homework/exercise/JavaExcercise08.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise/JavaExcercise01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise/JavaExcercise02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise/JavaExcercise03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise/JavaExcercise04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise/JavaExcercise05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise/JavaExcercise06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise/JavaExcercise07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercise/JavaExcercise08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gugudan/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gugudan/Ch1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gugudan/GugudanMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gugudan/If.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gugudan/Method.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gugudantest/GugudanMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gugudantest/MethodTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/homework/lotto/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/homework/lotto/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lotto-service/lotto/LottoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/homework/lotto/LottoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lotto-service/lotto/LottoTest1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lotto-service/lotto/MyLottoService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,15 +48,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/hello" />
   </component>
-  <component name="RunManager" selected="Application.JavaExcercise08">
-    <configuration name="JavaExcercise04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercise.JavaExcercise04" />
+  <component name="RunManager" selected="Application.GugudanMain (1)">
+    <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gugudan.Array" />
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercise.*" />
+          <option name="PATTERN" value="gugudan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaExcercise05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercise.JavaExcercise05" />
+    <configuration name="GugudanMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gugudan.GugudanMain" />
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercise.*" />
+          <option name="PATTERN" value="gugudan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaExcercise06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercise.JavaExcercise06" />
+    <configuration name="GugudanMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gugudantest.GugudanMain" />
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercise.*" />
+          <option name="PATTERN" value="gugudantest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaExcercise07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercise.JavaExcercise07" />
+    <configuration name="Method" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gugudan.Method" />
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercise.*" />
+          <option name="PATTERN" value="gugudan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaExcercise08" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercise.JavaExcercise08" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gugudan.test" />
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercise.*" />
+          <option name="PATTERN" value="gugudan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JavaExcercise08" />
-        <item itemvalue="Application.JavaExcercise07" />
-        <item itemvalue="Application.JavaExcercise06" />
-        <item itemvalue="Application.JavaExcercise05" />
-        <item itemvalue="Application.JavaExcercise04" />
+        <item itemvalue="Application.GugudanMain (1)" />
+        <item itemvalue="Application.GugudanMain" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.Method" />
+        <item itemvalue="Application.Array" />
       </list>
     </recent_temporary>
   </component>
@@ -150,5 +136,16 @@
       <updated>1649128169662</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gugudan/Ch1.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
