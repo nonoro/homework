@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42d3b9ff-c8ad-49d7-bc10-9766bbdcc9e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gugudan/djaldkfjda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gugudantest/GugudanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gugudantest/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gugudantest/Test1GuGudanMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gugudantest/Test1InputNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/homework/gugudantest/GugudanMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/homework/gugudantest/MethodTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gugudantest/GugudanMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gugudantest/GugudanMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gugudantest/MethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gugudantest/MethodTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/homework/gugudantest/GugudanTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/homework/gugudantest/GugudanTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gugudantest/GugudanMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gugudantest/GugudanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gugudantest/GugudanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gugudantest/MethodTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/hello" />
   </component>
-  <component name="RunManager" selected="Application.GugudanTest">
+  <component name="RunManager" selected="Application.Test1">
     <configuration name="GugudanMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gugudantest.GugudanMain" />
       <module name="homework" />
@@ -102,6 +103,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gugudantest.Test1" />
+      <module name="homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gugudantest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="djaldkfjda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gugudan.djaldkfjda" />
       <module name="homework" />
@@ -115,26 +129,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gugudan.test" />
-      <module name="homework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gugudan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test1" />
+        <item itemvalue="Application.GugudanMain (1)" />
         <item itemvalue="Application.GugudanTest" />
         <item itemvalue="Application.djaldkfjda" />
-        <item itemvalue="Application.GugudanMain (1)" />
         <item itemvalue="Application.GugudanMain" />
-        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
