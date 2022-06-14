@@ -13,6 +13,7 @@ public class CalendarTestMethod {
     public static final int NOV = 11;
     public static final int FEB_LAST_DAYS = 28;
     public static final int APR_JUN_SEP_NOV_LAST_DAYS = 30;
+    public static final int YEAR = 2022;
 
     public void runPrompt() {
         String string;
@@ -39,7 +40,8 @@ public class CalendarTestMethod {
                 System.out.println("1~12까지 숫자를 입력해 주세요");
                 continue;
             }
-            String[] day1 = {"일", "월", "화", "수", "목", "금", "토"};
+            System.out.printf("     <<%4d년 %3d월>>\n", YEAR, monthInput);
+            String[] day1 = {"SU", "MO", "TU", "WE", "TH", "FR", "SA"};
             for (String days : day1) {
                 System.out.printf("%s\t", days);
             }
@@ -65,6 +67,7 @@ public class CalendarTestMethod {
                     System.out.println();
                 }
             }
+            System.out.println();
             System.out.println();
         }
     }
