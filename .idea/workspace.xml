@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42d3b9ff-c8ad-49d7-bc10-9766bbdcc9e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/calendar/CalendarLastDay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calendar/CalendarTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calendar/ScannerPlus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calendar/CalendarTestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calendar/CalendarTestMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/homework/gugudantest/GugudanTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/homework/gugudantest/GugudanTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/homework/gugudantest/Test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/homework/gugudantest/Test1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/homework/calendar/CalendarLastDay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/homework/calendar/CalendarLastDay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calendar/CalendarLastDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calendar/CalendarLastDay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.CalendarLastDay">
+  <component name="RunManager" selected="Application.CalendarTestMain">
     <configuration name="CalendarLastDay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="calendar.CalendarLastDay" />
       <module name="homework" />
@@ -69,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GugudanMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gugudantest.GugudanMain" />
+    <configuration name="CalendarTestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calendar.CalendarTestMain" />
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gugudantest.*" />
+          <option name="PATTERN" value="calendar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GugudanMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gugudantest.GugudanMain" />
+    <configuration name="CalendarTestMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calendar.CalendarTestMethod" />
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gugudantest.*" />
+          <option name="PATTERN" value="calendar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,26 +107,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gugudantest.Test1" />
-      <module name="homework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gugudantest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalendarTestMain" />
+        <item itemvalue="Application.CalendarTestMethod" />
         <item itemvalue="Application.CalendarLastDay" />
         <item itemvalue="Application.ScannerPlus" />
         <item itemvalue="Application.CalendarTest1" />
-        <item itemvalue="Application.Test1" />
-        <item itemvalue="Application.GugudanMain (1)" />
       </list>
     </recent_temporary>
   </component>
