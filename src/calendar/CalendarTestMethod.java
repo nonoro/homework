@@ -25,6 +25,8 @@ public class CalendarTestMethod {
 
         while (true) {
             System.out.println("년도를 입력하세요.");
+            System.out.print(PROMPT);
+
             string = input.next();
             try {
                 year = Integer.parseInt(string);

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42d3b9ff-c8ad-49d7-bc10-9766bbdcc9e1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/homework/calendar/CalendarTestMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/homework/calendar/CalendarTestMethod.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calendar/CalendarTestMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calendar/CalendarTestMethod.java" afterDir="false" />
     </list>
