@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42d3b9ff-c8ad-49d7-bc10-9766bbdcc9e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/calendar/TestCalendarMeothod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/homework/calendar/CalendarTestMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/homework/calendar/CalendarTestMethod.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calendar/CalendarTestMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calendar/CalendarTestMethod.java" afterDir="false" />
     </list>
@@ -44,7 +46,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.CalendarTestMain">
+  <component name="RecentsManager">
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="calendar.TestCalendarMeothod" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestCalendarMeothod">
     <configuration name="CalendarLastDay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="calendar.CalendarLastDay" />
       <module name="homework" />
@@ -54,13 +61,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalendarTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="calendar.CalendarTest1" />
-      <module name="homework" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,13 +104,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCalendarMeothod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calendar.TestCalendarMeothod" />
+      <module name="homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calendar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestCalendarMeothod" />
         <item itemvalue="Application.CalendarTestMain" />
         <item itemvalue="Application.CalendarTestMethod" />
         <item itemvalue="Application.CalendarLastDay" />
         <item itemvalue="Application.ScannerPlus" />
-        <item itemvalue="Application.CalendarTest1" />
       </list>
     </recent_temporary>
   </component>
