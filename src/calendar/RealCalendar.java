@@ -1,6 +1,5 @@
 package calendar;
 
-import java.util.Calendar;
 import java.util.Scanner;
 
 public class RealCalendar {
@@ -37,26 +36,29 @@ public class RealCalendar {
 
     private static void calendar(int year, int month) {
         int day;
-        int week;
+        int firstDayOfMonth;
 
         if (isLeapYear(year)) {
             day = (year - 1) * 365 + (year - 1) / 4 - (year - 1) / 100 + (year - 1) / 400;
             for (int i = 0; i < month - 1; i++) {
                 day += LEAP_YEAR_LAST_DAY[i];
             }
-            week = (day % 7) + 1;
+            firstDayOfMonth = (day % 7) + 1;
 
-            for (int i = 0; i < week; i++) {
-                System.out.print("\t");
+            for (int i = 0; i < firstDayOfMonth; i++) {
+                if (firstDayOfMonth == 7) {
+                    break;
+                }
+                printBlank();
             }
-            for (int i = 1; i <= LEAP_YEAR_LAST_DAY[month-1]; i++) {
+            for (int i = 1; i <= LEAP_YEAR_LAST_DAY[month - 1]; i++) {
                 System.out.printf("%d\t", i);
-                week++;
-                if (week % 7 == 0)
+                firstDayOfMonth++;
+                if (firstDayOfMonth % 7 == 0) {
                     printNewLine();
-
+                }
             }
-            if (week % 7 != 0) {
+            if (firstDayOfMonth % 7 != 0) {
                 printNewLine();
             }
         } else {
@@ -64,23 +66,34 @@ public class RealCalendar {
             for (int i = 0; i < month - 1; i++) {
                 day += LAST_DAY[i];
             }
-            week = (day % 7) + 1;
+            firstDayOfMonth = (day % 7) + 1;
 
-            for (int i = 0; i < week; i++) {
-                System.out.print("\t");
+
+            for (int i = 0; i < firstDayOfMonth; i++) {
+                if (firstDayOfMonth == 7) {
+                    break;
+                }
+                printBlank();
             }
 
-            for (int i = 1; i <= LAST_DAY[month-1]; i++) {
+            for (int i = 1; i <= LAST_DAY[month - 1]; i++) {
                 System.out.printf("%d\t", i);
-                week++;
-                if (week % 7 == 0)
-                    printNewLine();
+                firstDayOfMonth++;
 
+
+                if (firstDayOfMonth % 7 == 0) {
+                    printNewLine();
+                }
             }
-            if (week % 7 != 0) {
+            if (firstDayOfMonth % 7 != 0) {
                 printNewLine();
             }
         }
+
+    }
+
+    private static void printBlank() {
+        System.out.print("\t");
     }
 
     private static void printNewLine() {
