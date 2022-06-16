@@ -114,8 +114,15 @@ public class TestCalendarMeothod {
     }
 
     private static int inputMonth() {
-        System.out.print(INPUT_MONTH);
-        return inputInt();
+        while (true) {
+            System.out.print(INPUT_MONTH);
+            int number = inputInt();
+            if (number > 12 || number < 1) {
+                System.out.println("잘못된 입력입니다. 1 ~ 12 까지의 숫자 중 하나를 입력해 주세요");
+                continue;
+            }
+            return number;
+        }
     }
 
     private static void exitNumbers(String number) {
