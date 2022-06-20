@@ -1,28 +1,134 @@
 package calendar;
 
-import java.util.Scanner;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class RealCalendar {
     private static final Scanner SCANNER = new Scanner(System.in);
-    private static final String PROMPT = "> ";
-    private static final String INPUT_YEAR = "원하는 연도를 입력하세요. (-1을 누르면 프로그램을 종료합니다.) \n YEAR" + PROMPT;
-    private static final String INPUT_MONTH = "원하는 달을 입력하세요. (-1을 누르면 프로그램을 종료합니다.) \n MONTH" + PROMPT;
+    private static final String ARROW = "> ";
+    private static final String INPUT_YEAR = "원하는 연도를 입력하세요.  \n YEAR" + ARROW;
+    private static final String INPUT_MONTH = "원하는 달을 입력하세요.  \n MONTH" + ARROW;
     private static final String[] WEEKDAY = {"SU", "MO", "TU", "WE", "TH", "FR", "SA"};
     private static final int[] LAST_DAY = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     private static final int[] LEAP_YEAR_LAST_DAY = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     public static final String INPUT_INT_ERROR = "숫자를 입력해 주세요";
+    public static Map<String, List<String>> planMap = new HashMap<>();
 
 
     public static void main(String[] args) {
+        Prompt prompt = new Prompt();
+        prompt.printMenu();
         while (true) {
-            int year = inputYear();
-            int month = inputMonth();
-            calendarTitle(year, month);
-            weekdays();
-            boundary();
-            calendar(year, month);
-            System.out.println();
+            System.out.println("명령 (1, 2, 3, 4, h, q)");
+            System.out.print(ARROW);
+            runPrompt();
+
         }
+    }
+
+    private static void runPrompt() {
+        Prompt prompt = new Prompt();
+        Scanner cmd = new Scanner(System.in);
+        String input = cmd.next();
+        if (input.equals("1")) {
+            cmdResisterPlanPrompt();
+        } else if (input.equals("2")) {
+            cmdSearchPlanPrompt();
+        } else if (input.equals("3")) {
+            watchCalendar();
+        } else if (input.equals("4")) {
+            showRegisteredPlan();
+        } else if (input.equals("h")) {
+            prompt.printMenu();
+        } else if (input.equals("q")) {
+            exitNumbers("q");
+        }
+    }
+
+    private static void showRegisteredPlan() {
+        Iterator<String> keys = planMap.keySet().iterator();
+        while (keys.hasNext()) {
+            String key = keys.next();
+            System.out.println("KEY : " + key);
+        }
+    }
+
+    private static void cmdResisterPlanPrompt() {
+
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.println("[일정 등록] 날짜를 입력하세요.");
+            System.out.print(ARROW);
+            String date = scanner.next();
+            try {
+               Date date1 = new SimpleDateFormat("yyyy-MM-dd").parse(date);
+            } catch (ParseException e) {
+                System.out.println("yyyy-MM-dd 형식으로 입력해주세요");
+                continue;
+            }
+            System.out.println("일정을 입력하세요");
+            System.out.print(ARROW);
+            scanner.nextLine();        //  이걸 안쓰면 위에 String date = scanner.next();으로 입력했던 값이 입력버퍼에 남게되고 그 남아있는 데이터를 가져가서 사용하므로 nextLine()을 입력하지 않았는데도 다음으로 넘어간다
+                                       //   따라서 쓰기전에 scanner.nextLine()을 한번 사용해서 입력버퍼를 비워준다
+            String plan = scanner.nextLine();
+            List<String> list = getPlan(date);
+            if (list == null) {
+                list = new ArrayList<>();
+            }
+
+            list.add(plan);
+            System.out.println("일정이 등록되었습니다.");
+            registerPlan(date, list);
+            break;
+        }
+    }
+
+    private static void registerPlan(String strDate, List<String> plan) {
+            planMap.put(strDate, plan);
+    }
+
+    private static void cmdSearchPlanPrompt() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("[일정 검색] 날짜를 입력하세요.");
+        while (true) {
+            String date = scanner.next();
+            try {
+                Date date1 = new SimpleDateFormat("yyyy-MM-dd").parse(date);
+            } catch (ParseException e) {
+                System.out.println("yyyy-MM-dd 형식으로 입력해주세요");
+                continue;
+            }
+            List<String> plans = getPlan(date);
+            if (plans != null) {
+                System.out.print(ARROW);
+                System.out.println(plans.size()+"개의 일정이 있습니다.");
+                int count = 0;
+
+                for (String plan : plans) {
+                    count++;
+                    System.out.println(count + "." + plan);
+                }
+                break;
+            } else {
+                System.out.println("등록된 일정이 없습니다.");
+                break;
+            }
+        }
+    }
+
+    private static List<String> getPlan(String date) {
+        return planMap.get(date);
+    }
+
+    private static void watchCalendar() {
+        int year = inputYear();
+        int month = inputMonth();
+        calendarTitle(year, month);
+        weekdays();
+        boundary();
+        calendar(year, month);
+        System.out.println();
     }
 
 
@@ -137,7 +243,7 @@ public class RealCalendar {
     }
 
     private static void exitNumbers(String number) {
-        if (number.equals("-1")) {
+        if (number.equals("q")) {
             System.out.println("Bye Bye");
             System.exit(0);
         }

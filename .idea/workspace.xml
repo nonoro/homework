@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42d3b9ff-c8ad-49d7-bc10-9766bbdcc9e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/calendar/RealCalendar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calendar/Prompt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/homework/calendar/RealCalendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/homework/calendar/RealCalendar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calendar/RealCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calendar/RealCalendar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
