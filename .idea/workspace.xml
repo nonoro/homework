@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42d3b9ff-c8ad-49d7-bc10-9766bbdcc9e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/calendar/Prompt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calendar/lastCalendar/CalendarMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calendar/lastCalendar/CalendarManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calendar/lastCalendar/PlanItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/homework/calendar/RealCalendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/homework/calendar/RealCalendar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calendar/RealCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calendar/RealCalendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/homework/calendar/Prompt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/homework/calendar/RealCalendar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calendar/Prompt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calendar/RealCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calendar/lastCalendar/Prompt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +55,13 @@
       <recent name="calendar.TestCalendarMeothod" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RealCalendar">
-    <configuration name="CalendarTestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="calendar.CalendarTestMain" />
+  <component name="RunManager" selected="Application.CalendarMain">
+    <configuration name="CalendarMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calendar.lastCalendar.CalendarMain" />
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="calendar.*" />
+          <option name="PATTERN" value="calendar.lastCalendar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RealCalendar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="calendar.RealCalendar" />
+    <configuration name="CalendarTestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calendar.CalendarTestMain" />
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="calendar.*" />
+          <option name="PATTERN" value="calendar.lastCalendar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,7 +87,7 @@
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="calendar.*" />
+          <option name="PATTERN" value="calendar.lastCalendar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,7 +100,7 @@
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="calendar.*" />
+          <option name="PATTERN" value="calendar.lastCalendar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,7 +113,7 @@
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="calendar.*" />
+          <option name="PATTERN" value="calendar.lastCalendar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,7 +123,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RealCalendar" />
+        <item itemvalue="Application.CalendarMain" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.TestCalendarMeothod" />
         <item itemvalue="Application.RoJunConfirm" />
