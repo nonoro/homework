@@ -16,6 +16,7 @@ public class Prompt {
     private static final int[] LEAP_YEAR_LAST_DAY = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     public static final String INPUT_INT_ERROR = "숫자를 입력해 주세요";
     private static final String SAVE_FILE = "calendar.dat";
+    public static final String DILIMITER = "\\|";
     public static Map<String, List<String>> planMap = new HashMap<>();
 
     public static void printMenu() {
@@ -26,6 +27,11 @@ public class Prompt {
         System.out.println("4. 일정이 등록된 날짜 보기");
         System.out.println("h. 도움말, q. 종료");
         System.out.println("+-------------------+");
+    }
+
+    public static void printInputCommand() {
+        System.out.println("명령 (1, 2, 3, 4, h, q)");
+        System.out.print(ARROW);
     }
 
     public static void runPrompt() {
@@ -83,7 +89,7 @@ public class Prompt {
         while (true) {
             System.out.println("[일정 등록] 날짜를 입력하세요.");
             System.out.print(ARROW);
-            String date = scanner.next();
+            String date = scanner.nextLine();
             try {
                 Date date1 = new SimpleDateFormat("yyyy-MM-dd").parse(date);
             } catch (ParseException e) {
@@ -92,7 +98,7 @@ public class Prompt {
             }
             System.out.println("일정을 입력하세요");
             System.out.print(ARROW);
-            scanner.nextLine();        //  이걸 안쓰면 위에 String date = scanner.next();으로 입력했던 값이 입력버퍼에 남게되고 그 남아있는 데이터를 가져가서 사용하므로 nextLine()을 입력하지 않았는데도 다음으로 넘어간다
+//            scanner.nextLine();        //  이걸 안쓰면 위에 String date = scanner.next();으로 입력했던 값이 입력버퍼에 남게되고 그 남아있는 데이터를 가져가서 사용하므로 nextLine()을 입력하지 않았는데도 다음으로 넘어간다
             //   따라서 쓰기전에 scanner.nextLine()을 한번 사용해서 입력버퍼를 비워준다
             String plan = scanner.nextLine();
             registerPlan(date, plan);
@@ -101,14 +107,7 @@ public class Prompt {
     }
 
     private static void registerPlan(String date, String plan) {
-        List<String> list = getPlan(date);
-        if (list == null) {
-            list = new ArrayList<>();
-        }
-
-        list.add(plan);
-        System.out.println("일정이 등록되었습니다.");
-        planMap.put(date, list);
+        registerPlanToMap(date, plan);
 
         File f = new File(SAVE_FILE);
         String item = saveString(date, plan);
@@ -117,7 +116,20 @@ public class Prompt {
             fw.write(item);
             fw.close();
         } catch (IOException e) {
+            e.printStackTrace();
+            return;
         }
+        System.out.println("일정이 등록되었습니다.");
+    }
+
+    private static void registerPlanToMap(String date, String plan) {
+        List<String> list = getPlan(date);
+        if (list == null) {
+            list = new ArrayList<>();
+        }
+
+        list.add(plan);
+        planMap.put(date, list);
     }
 
     private static String saveString(String date, String plan) {
@@ -127,7 +139,7 @@ public class Prompt {
             sdate = formatter.format(date);
         } catch (IllegalArgumentException e) {
         }
-        return date + "," + "\"" + plan + "\"" + "\n";
+        return date + DILIMITER + plan + "\n";
     }
 
     private static void cmdSearchPlanPrompt() {
@@ -165,20 +177,27 @@ public class Prompt {
         }
     }
 
-//    public static void readFile(String date, List<String> detail) {
-//        try {
-//            File f = new File(SAVE_FILE);
-//            if (!f.exists()) {
-//                System.err.println("no save file");
-//            }
-//            Scanner s = new Scanner(f);
-//            while (s.hasNextLine()) {
-//                detail = s.next();
-//                planMap.put(date, detail);
-//            }
-//        } catch (Exception e) {
-//        }
-//    }
+    public static int readFile() {
+        File f = null;
+        Scanner s = null;
+        try {
+            f = new File(SAVE_FILE);
+            s = new Scanner(f);
+        } catch (Exception e) {
+            System.out.println("저장된 파일이 존재하지 않습니다.");
+            return 0;
+        }
+
+        int count= 0;
+        while (s.hasNextLine()) {
+            String line = s.nextLine();
+            String[] split = line.split(DILIMITER);
+            registerPlanToMap(split[0], split[1]);
+            count++;
+        }
+        return count;
+    }
+
 
     private static List<String> getPlan(String date) {
         return planMap.get(date);
